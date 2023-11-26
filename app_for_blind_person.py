@@ -289,7 +289,7 @@ def upload():
     #     # Convert RGB to BGR
         open_cv_image = open_cv_image[:, :, ::-1].copy()
         main(open_cv_image)
-        cv2.imwrite('filename.jpg', open_cv_image)
+        # cv2.imwrite('filename.jpg', open_cv_image)
         # For now, let's print the length of the received image data
         # print("Received image data. Length:", len(img_bytes))
     else:
